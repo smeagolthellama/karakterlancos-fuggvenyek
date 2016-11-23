@@ -20,11 +20,11 @@ int main()
     t[strlen(t)+1]=0;
     t[strlen(t)]=' ';
 
-	while(i<strlen(t)){
-		j=strchr(t+i,' ')-t;
+	while(i<strlen(t)-1){
+		j=strchr(t+i,' ')-(t+i);
 		strncpy(words,t+i,j);
 		cout<<bintodec(atoi(words))<<' ';
-		i=j;
+		i=j+1;
 	}
 }
 
