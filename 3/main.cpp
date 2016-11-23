@@ -23,7 +23,7 @@ int main()
 	while(i<strlen(t)-1){
 		j=strchr(t+i,' ')-(t+i);
 		strncpy(words,t+i,j);
-		cout<<bintodec(atoi(words))<<' ';
+		cout<<bintodec(atoi(words))<<endl;
 		i=j+1;
 	}
 }
